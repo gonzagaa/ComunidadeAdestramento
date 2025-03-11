@@ -1,0 +1,134 @@
+.custom-shape-divider-top-1738367723 {
+    position: absolute;
+    top: -.1rem;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1738367723 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 58px;
+}
+
+.custom-shape-divider-top-1738367723 .shape-fill {
+    fill: var(--bg-black);
+}
+
+#depoimento {
+    overflow: hidden;
+    position: relative;
+
+    padding-top: 3rem;
+    padding-bottom: 8rem;
+}
+
+#depoimento img.bg {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    object-fit: cover;
+}
+
+#depoimento header {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    position: relative;
+    z-index: 2;
+}
+
+#depoimento img.arrow {
+    width: 60%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+#depoimento .video {
+    width: 100%;
+    aspect-ratio: 9/18;
+    border: 2px solid var(--primary-color);
+    border-radius: 2rem;
+    position: relative;
+}
+
+#depoimento .video img.play {
+    position: absolute;
+    width: 7rem;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#depoimento .video a button.mobile {
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 95%;
+}
+
+#depoimento a button.desktop {
+    display: none;
+}
+
+#depoimento iframe.mobile {
+    width: 100%;
+    border-radius: 2rem 2rem 0 0;
+    aspect-ratio: 9/16;
+}
+
+#depoimento iframe.desktop {
+    display: none;
+    visibility: hidden;
+}
+
+@media (min-width: 1080px) {
+    section#depoimento {
+        padding-bottom: 8rem;
+    }
+
+    section#depoimento iframe.mobile {
+        display: none;
+        visibility: hidden;
+    }
+
+    section#depoimento iframe.desktop {
+        width: 100%;
+        height: 100%;
+        border-radius: 2rem;
+
+        visibility: visible;
+        display: inherit;
+    }
+
+    section#depoimento img.arrow {
+        width: 20%;
+        top: 1%;
+    }
+
+    section#depoimento header {
+        margin-top: 4rem;
+        margin-bottom: 5rem;
+    }
+
+    section#depoimento .video {
+        aspect-ratio: 16/9;
+    }
+
+    section#depoimento .video a button.mobile {
+        display: none;
+    }
+    
+    section#depoimento a button.desktop {
+        margin-top: 5rem;
+        display: inherit;
+    }
+}
+

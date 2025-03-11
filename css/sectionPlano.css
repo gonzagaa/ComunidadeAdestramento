@@ -1,0 +1,306 @@
+#plano {
+    position: relative;
+    overflow: hidden;
+
+    background: var(--bg-black);
+}
+
+#plano img.fundo {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    object-fit: cover;
+}
+
+#plano .video img.bg {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 120%;
+    object-fit: cover;
+
+    mask-image: linear-gradient(to bottom, #000 10%, #00000006);
+}
+
+#plano .video img.bg.desktop {
+    display: none;
+}
+
+#plano .text {
+    position: relative;
+    z-index: 1;
+    margin-top: 30rem;
+}
+
+#plano h2.title {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    color: #f1f1f1;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+}
+
+#plano h2.title span {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+}
+
+#plano h2.plano {
+    color: var(--color-text);
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+    font-family: var(--Adoha); 
+    font-weight: 500;
+}
+
+#plano h2.plano {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#plano h2.plano img {
+    width: 3rem;
+    margin-top: -1.8rem;
+}
+
+#plano .topics {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+    gap: 1rem;
+
+    margin-bottom: 4rem;
+}
+
+#plano .topics p ion-icon {
+    color: #fff;
+    background: var(--gradient);
+    border-radius: 50%;
+    padding: .5rem;
+    line-height: 0;
+    font-size: 1.5rem;
+    margin-bottom: -.7rem;
+    margin-right: 1rem;
+}
+
+#plano .topics p {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #bebebe;
+    gap: .5rem;
+}
+
+#plano .topics p span {
+    font-weight: 600;
+    color: #d6d6d6;
+}
+
+#plano h5 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: left;
+
+    margin-bottom: 4rem;
+}
+
+#plano h5 span {
+    font-weight: 500;
+}
+
+#plano .price {
+    padding: 2rem;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background: linear-gradient(130deg, #71440022, #00000046, #0000002e, #76470021);
+    border-radius: 2rem;
+    box-shadow: 0 0 30px #f8a22026;
+}
+
+#plano .price p {
+    font-size: 1.4rem;
+    color: #fff;
+    font-weight: 400;
+}
+
+#plano .price p span {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+}
+
+#plano .price h3 {
+    color: #fff;
+    font-size: 11rem;
+    line-height: 1;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#plano .price h3 span {
+    font-size: 2rem;
+    color: #fff;
+    background: initial;
+    -webkit-background-clip: initial;
+    -webkit-text-fill-color: initial;
+}
+
+#plano .price h4 {
+    font-size: 1.6rem;
+    color: #fff;
+    font-weight: 400;
+}
+
+#plano .custom-shape-divider-top-1738825301 .shape-fill {
+    fill: #000;
+}
+
+@media (min-width: 1080px) {
+    section#plano {
+        height: 100vh;
+
+        background: var(--bg-black);
+    }
+
+    section#plano::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to top, #0B0B0B, #00000000 5%);
+        z-index: 1;
+        display: none;
+    } 
+
+    section#plano .video img.bg.desktop {
+        display: inherit;
+        left: initial;
+        right: 0;
+        left: 0;
+        width: 100%;
+        transform: initial;
+
+        mask-image: linear-gradient(to bottom, #000 40%, #00000006);
+    }
+
+    section#plano .price {
+        padding: initial;
+        backdrop-filter: initial;
+        -webkit-backdrop-filter: initial;
+        background: initial;
+        border-radius: initial;
+        border: initial;
+        box-shadow: initial;
+
+        text-align: center;
+    }
+    
+    section#plano .video img.bg.mobile {
+        border-radius: 3rem;
+        width: 41%;
+        right: 0;
+        top: 50%;
+        left: 40%;
+        transform: translate(0, -50%);
+        mask-image: linear-gradient(to left, #000 60%, transparent);
+    }
+
+    section#plano .text {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        text-align: left;
+
+        position: absolute;
+        margin-top: 0;
+        top: 50%;
+        transform: translate(0, -50%);
+
+        left: 18%;
+        padding: 4rem;
+        backdrop-filter: blur(16px) saturate(180%);
+        -webkit-backdrop-filter: blur(16px) saturate(180%);
+        background: linear-gradient(130deg, #4f300022, #00000046, #0000002e, #2416005d);
+        border-radius: 3rem;
+        border: 2px solid #ffffff10;
+        box-shadow: 0 0 30px #0e080026;
+    }
+
+    section#plano h2.title {
+        font-size: 1.8rem;
+    }
+
+    section#plano h2.plano {
+        font-size: 5rem;
+    }
+
+    section#plano h2.plano {
+        gap: 2rem;
+    }
+    
+    section#plano h2.plano img {
+        width: 5rem;
+    }
+
+    section#plano .topics {
+        gap: 1.5rem;
+        margin-bottom: 0;
+    }
+
+    section#plano .topics p ion-icon {
+        margin-bottom: -1rem;
+        font-size: 1.8rem;
+    }
+
+    section#plano .price {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    section#plano .price p {
+        font-size: 2rem;
+    }
+    
+    section#plano .price h3 {
+        font-size: 10rem;
+    }
+    
+    section#plano .price h4 {
+        font-size: 1.8rem;
+    }
+
+    section#plano a {
+        width: 100%;
+    }
+
+    section#plano a button {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1700px) {
+    section#plano .text {
+        left: 23%;
+    }
+
+    section#plano .video img.bg.mobile {
+        width: 35%;
+        left: 44%;
+    }
+}

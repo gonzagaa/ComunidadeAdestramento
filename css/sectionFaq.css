@@ -1,0 +1,152 @@
+#faq {
+    position: relative;
+    background: var(--bg-black);
+    z-index: 11;
+    overflow: hidden;
+}
+
+#faq .content header {
+    margin-bottom: 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#faq header img {
+    width: 120%;
+}
+
+#faq img.textura {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+
+    mix-blend-mode: luminosity;
+    opacity: .03;
+}
+
+#faq .faq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#faq details {
+    width: 100%;
+    user-select: none;
+}
+
+#faq summary {
+    color: #fffffffe;
+    font-weight: 300;
+    font-size: 1.4rem;
+
+    background: linear-gradient(45deg,  #03010733 0%, #25252646 100%);
+
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem;
+    width: 100%;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 1rem;
+
+    border: 2px solid #5757575a;
+
+    transition: all 200ms ease-in-out;
+}
+
+#faq summary:hover {
+    cursor: pointer;
+    border: 2px solid #ababab93;
+}
+
+#faq details[open] summary {
+    border-radius: 1rem 1rem 0 0;
+    background: linear-gradient(45deg,  #0301074e 0%, #25252654 100%);
+
+    border: 2px solid #ababab93;
+    border-bottom: 0;
+}
+
+#faq summary ion-icon {
+    font-size: 3rem;
+    transition: all .5s ease-in-out;
+    color: var(--primary-color);
+    transform: rotate(-45deg);
+    position: relative;
+    line-height: 0;
+}
+
+
+#faq details[open] summary ion-icon {
+    transform: rotate(0);
+}
+
+details>summary {
+    list-style: none;
+}
+
+summary::-webkit-details-marker {
+    display: none
+}
+
+#faq details p {
+        background: linear-gradient(45deg,  #03010733 0%, #25252646 100%);
+
+
+    font-size: 1.6rem;
+    color: #ffffffbc;
+    padding: 3rem;
+    padding-top: 1rem;
+    padding-right: 10%;
+    text-align: left;
+    font-weight: 200;
+    border: 2px solid #ababab93;
+
+    border-top: 0;
+
+    border-radius: 0 0 1rem 1rem;
+}
+
+@media (min-width: 1080px) {
+    section#faq .content header {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        text-align: left;
+    }
+
+    section#faq header img {
+        width: 100%;
+    }
+
+    section#faq .content header p {
+        font-size: 2.5rem;
+    }
+
+    section#faq .content header a button {
+        font-size: 2.5rem;
+        padding: 1rem 4rem;
+        margin-top: 3rem;
+    }
+
+    section#faq .wrapper .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    section#faq .wrapper .image img {
+        mask-image: linear-gradient(to right ,#fff, transparent 95%);
+    }
+}
