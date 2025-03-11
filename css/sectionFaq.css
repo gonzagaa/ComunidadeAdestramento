@@ -5,6 +5,22 @@
     overflow: hidden;
 }
 
+#faq img.bg {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    mask-image: linear-gradient(to bottom, #000 70%, transparent);
+}
+
+#faq .content {
+    position: relative;
+    z-index: 2;
+}
+
 #faq .content header {
     margin-bottom: 2rem;
 
@@ -17,24 +33,12 @@
     width: 120%;
 }
 
-#faq img.textura {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    z-index: -1;
-
-    mix-blend-mode: luminosity;
-    opacity: .03;
-}
-
 #faq .faq {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 #faq details {
@@ -45,15 +49,15 @@
 #faq summary {
     color: #fffffffe;
     font-weight: 300;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 
-    background: linear-gradient(45deg,  #03010733 0%, #25252646 100%);
+    background: linear-gradient(45deg,  #00000099 0%, #25252682 100%);
 
     display: flex;
     text-align: left;
     justify-content: space-between;
     align-items: center;
-    padding: 2.5rem;
+    padding: 2rem;
     width: 100%;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
@@ -123,6 +127,10 @@ summary::-webkit-details-marker {
         flex-direction: column;
         align-items: start;
         text-align: left;
+    }
+
+    section#faq img.bg {
+        display: none;
     }
 
     section#faq header img {

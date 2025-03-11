@@ -27,7 +27,8 @@
     height: 100%;
     object-fit: cover;
     z-index: 0;
-    opacity: .3;
+
+    mask-image: linear-gradient(to bottom, #000 70%, transparent);
 }
 
 #sobre .content {
@@ -52,6 +53,6 @@
     }
 
     section#sobre img.bg {
-        opacity: .3;
+        filter: brightness(.5);
     }
 }
