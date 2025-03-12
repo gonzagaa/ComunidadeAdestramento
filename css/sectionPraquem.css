@@ -275,7 +275,7 @@
 
   section#praquem .cards {
     gap: 2rem;
-    padding-inline: 10%;
+    padding-inline: 15%;
   }
 
   section#praquem .cards .card { 
@@ -306,21 +306,21 @@
   }
   
   section#praquem .image img {
-    width: 100%;
-    height: 100%;
+    width: 85%;
+    height: auto;
     object-fit: cover;
   }
   
   section#praquem .image.um {
-    left: -55%;
-    top: -70%;
-    mask-image: linear-gradient(to right, #000, transparent);
+    left: -50%;
+    top: -50%;
+    mask-image: linear-gradient(to right, #000, transparent 85%);
   }
   
   section#praquem .image.dois {
-    right: -55%;
-    top: -80%;
-    mask-image: linear-gradient(to left, #000, transparent);
+    right: -50%;
+    top: -50%;
+    mask-image: linear-gradient(to left, #000, transparent 85%);
   }
 
   section#praquem .cards .card .topics {
