@@ -41,6 +41,8 @@
   transform: translate(-50%, 0);
   z-index: 0;
   mask-image: linear-gradient(to bottom, #000, transparent);
+
+  filter: brightness(.6);
 }
 
 #praquem .image img {

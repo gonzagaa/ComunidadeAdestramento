@@ -21,8 +21,6 @@
     transform: translate(-50%, 0);
     width: 120%;
     object-fit: cover;
-
-    mask-image: linear-gradient(to bottom, #000 10%, #00000006);
 }
 
 #plano .video img.bg.desktop {
@@ -32,7 +30,7 @@
 #plano .text {
     position: relative;
     z-index: 1;
-    margin-top: 30rem;
+    margin-top: 34rem;
 }
 
 #plano h2.title {
@@ -119,11 +117,27 @@
 
 #plano .price {
     padding: 2rem;
+    padding-top: 5rem;
     backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
     background: linear-gradient(130deg, #71440022, #00000046, #0000002e, #76470021);
     border-radius: 2rem;
     box-shadow: 0 0 30px #f8a22026;
+}
+
+#plano .price h6 {
+    padding: 1rem 2rem;
+    background: linear-gradient(130deg, #301d00, #000000, #000000cf, #241600);
+    border-radius: .5rem;
+    box-shadow: 0 0 30px #f8a22026;
+    color: #f89320;
+    font-size: 1.4rem;
+
+    position: absolute;
+    width: 70%;
+    top: -6%;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 
 #plano .price p {
