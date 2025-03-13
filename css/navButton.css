@@ -1,0 +1,104 @@
+#navigation-button {
+    position: fixed;
+    z-index: 20;
+    bottom: 2rem;
+    width: 94%;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    padding-block: 1.5rem;
+    border-radius: 2rem;
+
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background: linear-gradient(130deg, #301d00, #000000, #000000cf, #241600);
+    box-shadow: 0 0 30px #f8a22026;
+
+    animation: nav 10s ease-in-out backwards;
+}
+
+#navigation-button .content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navigation-button h3 {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+#navigation-button a {
+    width: initial;
+}
+
+#navigation-button a button {
+    font-size: 1.2rem;
+    padding-block: 1rem;
+    padding-inline: 1rem;
+}
+
+#navigation-button a button:hover {
+
+}
+
+@media (min-width: 1080px) {
+    nav#navigation-button {
+        display: none;
+
+
+        width: 27%;
+        left: initial;
+        right: 2%;
+        transform: translate(0, 0);   
+        transform: initial;
+        padding-block: 2rem;
+        bottom: initial;
+        top: 3rem;
+        animation: navDesktop 8s ease-in-out backwards;
+    }
+
+    nav#navigation-button img.logo {
+        width: 13rem;
+    }
+
+    nav#navigation-button a button {
+        font-size: 1.4rem;
+        padding: 1.5rem 2rem;
+    }
+}
+
+@keyframes nav {
+    0% {
+        display: none;
+        transform: translate(-50%, 3000%);
+    }
+
+    50% {
+        display: inherit;
+        transform: translate(-50%, 3000%);
+        /*  */
+    }
+
+    100% {
+        transform: translate(-50%, 0);
+    }
+}
+
+@keyframes navDesktop {
+    0% {
+        display: none;
+        transform: translate(0, -500%);
+    }
+
+    50% {
+        display: inherit;
+        transform: translate(0, -500%);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
