@@ -130,15 +130,15 @@
 }
 
 #plano .price h6 {
-    padding: 1rem 2rem;
-    background: linear-gradient(130deg, #633b00, #3c2500, #412800, #6c4100);
+    padding: 1rem .5rem;
+    background: var(--gradient);
     border-radius: 1rem;
     box-shadow: 0 0 30px #f8a22026;
-    color: #ffffff;
-    font-size: 1.4rem;
+    color: #000000;
+    font-size: 1rem;
 
     position: absolute;
-    width: 70%;
+    width: 60%;
     top: -6%;
     left: 50%;
     transform: translate(-50%, 0);

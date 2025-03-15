@@ -15,7 +15,7 @@
     box-shadow: 0 0 30px #f8a22026;
     border: 1px solid var(--primary-color);
 
-    animation: nav 10s ease-in-out backwards;
+    animation: nav 5s ease-in-out backwards;
 }
 
 #navigation-button .content {
@@ -41,8 +41,8 @@
     padding-inline: 1rem;
 }
 
-#navigation-button a button:hover {
-
+#navigation-button.desactive {
+    display: none;
 }
 
 @media (min-width: 1080px) {
@@ -74,12 +74,12 @@
 @keyframes nav {
     0% {
         display: none;
-        transform: translate(-50%, 3000%);
+        transform: translate(-50%, 2000%);
     }
 
     50% {
         display: inherit;
-        transform: translate(-50%, 3000%);
+        transform: translate(-50%, 2000%);
         /*  */
     }
 
