@@ -55,6 +55,11 @@
     width: 70%;
   }
 
+  #home img.logo {
+    width: 10rem;
+    margin-top: -5rem;
+  }
+
   #home h2 {
     display: none;
     color: #fff;
@@ -258,6 +263,9 @@
     height: 100vh;
   }
 
+  header#home img.logo {
+    width: 15rem;
+  }
 
   header#home img.testebg {
     position: absolute;

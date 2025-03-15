@@ -4,6 +4,8 @@ footer {
     position: relative;
 
     padding-block: 8rem;
+
+    display: none;
 }
 
 footer::before {
@@ -90,6 +92,10 @@ footer .redes-sociais ion-icon {
 @media (min-width: 1080px) {
     .wrapper {
       width: min(112rem, 100%);
+    }
+
+    footer#footer {
+        display: inherit;
     }
 
     footer#footer .wrapper .content {

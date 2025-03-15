@@ -26,6 +26,10 @@
     padding-bottom: 8rem;
 }
 
+#depoimento header h2 {
+    padding-inline: 22%;
+}
+
 #depoimento img.bg {
     position: absolute;
     width: 100%;
@@ -33,6 +37,9 @@
     left: 0;
     height: 100%;
     object-fit: cover;
+
+    mask-image: linear-gradient(to bottom, #000 70%, transparent);
+
 }
 
 #depoimento header {
@@ -92,6 +99,10 @@
 @media (min-width: 1080px) {
     section#depoimento {
         padding-bottom: 8rem;
+    }
+
+    section#depoimento header h2 {
+        padding-inline: 0;
     }
 
     section#depoimento iframe.mobile {

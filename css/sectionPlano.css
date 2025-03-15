@@ -12,6 +12,8 @@
     left: 0;
     height: 100%;
     object-fit: cover;
+
+    mask-image: linear-gradient(to top, #000 80%, transparent);
 }
 
 #plano .video img.bg {
@@ -21,6 +23,8 @@
     transform: translate(-50%, 0);
     width: 120%;
     object-fit: cover;
+
+    mask-image: linear-gradient(to top, #000 80%, transparent);
 }
 
 #plano .video img.bg.desktop {
@@ -80,7 +84,7 @@
 }
 
 #plano .topics p ion-icon {
-    color: #fff;
+    color: #000000;
     background: var(--gradient);
     border-radius: 50%;
     padding: .5rem;
@@ -127,10 +131,10 @@
 
 #plano .price h6 {
     padding: 1rem 2rem;
-    background: linear-gradient(130deg, #301d00, #000000, #000000cf, #241600);
-    border-radius: .5rem;
+    background: linear-gradient(130deg, #633b00, #3c2500, #412800, #6c4100);
+    border-radius: 1rem;
     box-shadow: 0 0 30px #f8a22026;
-    color: #f89320;
+    color: #ffffff;
     font-size: 1.4rem;
 
     position: absolute;

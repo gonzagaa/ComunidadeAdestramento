@@ -13,6 +13,7 @@
     -webkit-backdrop-filter: blur(16px) saturate(180%);
     background: linear-gradient(130deg, #301d00, #000000, #000000cf, #241600);
     box-shadow: 0 0 30px #f8a22026;
+    border: 1px solid var(--primary-color);
 
     animation: nav 10s ease-in-out backwards;
 }
