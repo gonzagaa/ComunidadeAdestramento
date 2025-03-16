@@ -4,7 +4,7 @@
     z-index: 11;
     overflow: hidden;
 
-    padding-block: 9rem;
+    padding-block: 4rem;
 }
 
 #faq img.bg {
@@ -15,7 +15,7 @@
     height: 100%;
     object-fit: cover;
     z-index: 0;
-    mask-image: linear-gradient(to top, #000 70%, transparent);
+    mask-image: linear-gradient(to top, #000 95%, transparent);
 }
 
 #faq .content {

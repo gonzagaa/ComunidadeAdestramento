@@ -24,7 +24,7 @@
     width: 120%;
     object-fit: cover;
 
-    mask-image: linear-gradient(to top, #000 80%, transparent);
+    mask-image: linear-gradient(to top, #000 90%, transparent);
 }
 
 #plano .video img.bg.desktop {
