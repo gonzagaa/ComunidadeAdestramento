@@ -12,7 +12,7 @@
     height: 30%;
     top: 0;
     left: 0;
-    background: linear-gradient(to bottom, #050505 30%, transparent);
+    background: linear-gradient(to bottom, #050505 1%, transparent);
     z-index: 1;
 }
 
@@ -36,7 +36,7 @@
     object-fit: cover;
     z-index: 0;
 
-    mask-image: linear-gradient(to bottom, #000 70%, transparent);
+    mask-image: linear-gradient(to bottom, #000 80%, transparent);
 }
 
 #sobre .content {
