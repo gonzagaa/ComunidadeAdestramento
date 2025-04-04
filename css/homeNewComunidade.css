@@ -102,7 +102,7 @@
   #home h1 {
     color: var(--color-text);
     line-height: 1;
-    font-size: 3rem;
+    font-size: 4rem;
 
     margin-top: 2rem;
     margin-bottom: 1rem;
@@ -414,8 +414,8 @@
       }
     
       header#home .content h1 {
-        font-size: 6rem;
-        line-height: .8;
+        font-size: 7rem;
+        line-height: 1;
         background: linear-gradient(180deg, #fffcf6 60%, #ffe1a0);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -469,7 +469,7 @@
   }
 
   header#home .content h1 {
-    font-size: 7rem;
+    font-size: 8rem;
     width: 100%;
   }
 

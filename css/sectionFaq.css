@@ -15,7 +15,6 @@
     height: 100%;
     object-fit: cover;
     z-index: 0;
-    mask-image: linear-gradient(to top, #000 95%, transparent);
 }
 
 #faq .content {
@@ -33,6 +32,7 @@
 
 #faq header img {
     width: 120%;
+    margin-top: -10%;
 }
 
 #faq .faq {
@@ -137,6 +137,7 @@ summary::-webkit-details-marker {
 
     section#faq header img {
         width: 100%;
+        margin-top: 0;
     }
 
     section#faq .content header p {

@@ -57,12 +57,22 @@
     transform: translate(-50%, 0);
 }
 
+#depoimento .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 #depoimento .video {
-    width: 100%;
+    width: 75%;
     aspect-ratio: 9/18;
     border: 2px solid var(--primary-color);
     border-radius: 2rem;
     position: relative;
+}
+
+#depoimento .video button {
+    font-size: 1.3rem;
 }
 
 #depoimento .video img.play {
@@ -103,6 +113,10 @@
 
     section#depoimento header h2 {
         padding-inline: 0;
+    }
+
+    section#depoimento .content {
+        padding-inline: 13%;
     }
 
     section#depoimento iframe.mobile {

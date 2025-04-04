@@ -264,6 +264,10 @@
         font-size: 1.8rem;
     }
 
+    section#plano .price h6 {
+        top: -2%;
+    }
+
     section#plano h2.plano {
         font-size: 5rem;
     }
