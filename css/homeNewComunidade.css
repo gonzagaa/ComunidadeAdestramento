@@ -259,6 +259,7 @@
 
   header#home img.logo {
     width: 15rem;
+    margin-bottom: 4rem;
   }
 
   header#home img.testebg {
@@ -414,8 +415,8 @@
       }
     
       header#home .content h1 {
-        font-size: 7rem;
-        line-height: 1;
+        font-size: 8rem;
+        line-height: .9;
         background: linear-gradient(180deg, #fffcf6 60%, #ffe1a0);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -469,7 +470,7 @@
   }
 
   header#home .content h1 {
-    font-size: 8rem;
+    font-size: 9rem;
     width: 100%;
   }
 
