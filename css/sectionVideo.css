@@ -94,7 +94,8 @@
     display: none;
 }
 
-#video iframe.mobile {
+#video iframe.mobile,
+#video div.mobile {
     width: 100%;
     border-radius: 2rem 2rem 0 0;
     aspect-ratio: 9/16;
@@ -110,7 +111,8 @@
         padding-bottom: 8rem;
     }
 
-    section#video iframe.mobile {
+    section#video iframe.mobile,
+    section#video div.mobile {
         display: none;
         visibility: hidden;
     }
