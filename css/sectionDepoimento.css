@@ -101,7 +101,7 @@
     aspect-ratio: 9/16;
 }
 
-#depoimento iframe.desktop {
+#depoimento iframe.desktopp {
     display: none;
     visibility: hidden;
 }
@@ -124,7 +124,7 @@
         visibility: hidden;
     }
 
-    section#depoimento iframe.desktop {
+    section#depoimento iframe.desktopp {
         width: 100%;
         height: 100%;
         border-radius: 2rem;
