@@ -95,7 +95,7 @@
     display: none;
 }
 
-#depoimento iframe.mobile {
+#depoimento iframe.mobilee {
     width: 100%;
     border-radius: 2rem 2rem 0 0;
     aspect-ratio: 9/16;
@@ -119,7 +119,7 @@
         padding-inline: 13%;
     }
 
-    section#depoimento iframe.mobile {
+    section#depoimento iframe.mobilee {
         display: none;
         visibility: hidden;
     }
