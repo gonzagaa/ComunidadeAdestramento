@@ -2,7 +2,7 @@
 /* @import './home.css'; */
 @import './button.css';
 @import './head.css';
-@import './sectionVideo.css';
+@import './sectionVideo.css?v=1.0.0';
 @import './sectionPraquem.css';
 @import './sectionPreco.css';
 @import './sectionDepoimento.css';
@@ -15,5 +15,6 @@
 @import './footer.css';
 @import './navButton.css';
 @import './author.css';
+@import './iframes.css';
 
 

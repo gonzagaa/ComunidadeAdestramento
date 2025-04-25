@@ -102,8 +102,8 @@
 }
 
 #depoimento iframe.desktopp {
-    display: none;
-    visibility: hidden;
+    display: none !important;
+    visibility: hidden !important;
 }
 
 @media (min-width: 1080px) {
@@ -129,8 +129,8 @@
         height: 100%;
         border-radius: 2rem;
 
-        visibility: visible;
-        display: inherit;
+        visibility: visible !important;
+        display: inherit !important;
     }
 
     section#depoimento img.arrow {
