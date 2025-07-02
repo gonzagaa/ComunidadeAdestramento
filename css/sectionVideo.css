@@ -110,6 +110,16 @@
     display: none !important;
 }
 
+#video #video-container {
+    height: 100%;
+}
+
+#video iframe {
+  border: none !important;
+  outline: none !important;
+}
+
+
 @media (min-width: 1080px) {
     section#video {
         padding-bottom: 8rem;
