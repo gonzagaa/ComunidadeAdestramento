@@ -17,10 +17,10 @@
     font-size: 62.5%;
 
     --color-text: #fff4dd;
-    --primary-color: #F8A120;
-    --secondy-color: #FCCC6E;
+    --primary-color: #F8AA31;
+    --secondy-color: #FCCA6A;
     --orange-black: #170E00;
-    --gradient: linear-gradient(45deg, #f89320 0%, #fcb04c 100%);
+    --gradient: linear-gradient(45deg, #F8AA31 0%, #FCCA6A 100%);
     --bg-black: #050505;
 
     --nav-height: 7.2rem;

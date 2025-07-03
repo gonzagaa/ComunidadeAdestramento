@@ -34,7 +34,7 @@
     height: 100%;
     object-fit: cover;
 
-    mask-image: linear-gradient(to bottom, #000 70%, transparent);
+    mask-image: linear-gradient(to top, #000 70%, transparent);
 }
 
 #video header {
@@ -122,7 +122,7 @@
 
 @media (min-width: 1080px) {
     section#video {
-        padding-bottom: 8rem;
+        padding-bottom: 15rem;
     }
 
     section#video iframe.mobile,
@@ -147,7 +147,7 @@
 
     section#video header {
         margin-top: 4rem;
-        margin-bottom: 5rem;
+        margin-bottom: 3rem;
     }
 
     section#video .content {
@@ -163,7 +163,7 @@
     }
     
     section#video a button.desktop {
-        margin-top: 5rem;
+        margin-top: 3rem;
         display: inherit;
     }
 }

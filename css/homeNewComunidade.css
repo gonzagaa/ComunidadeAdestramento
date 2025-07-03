@@ -56,75 +56,31 @@
   }
 
   #home img.logo {
-    width: 10rem;
-    margin-top: -5rem;
+    width: 7rem;
+    margin-top: -2rem;
     margin-bottom: 2rem;
   }
 
-  #home h2 {
-    display: none;
-    color: #fff;
-    font-family: 'Paralucent-ExtraLight', sans-serif;
-    text-transform: uppercase;
-
-    background: linear-gradient(145deg, #ffe1a0, #fffaf0, #ffe1a0);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-    font-size: 1.5rem;
-    letter-spacing: 5px;
-    
-
-    position: relative;
-
-  }
-
-  #home .content h2::before,
-#home .content h2::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
-    height: 2px;
-    width: 27%;
-}
-
-#home .content h2::before {
-    background: linear-gradient(to left, #F8A120, transparent);
-    left: -10%;
-}
-
-#home .content h2::after {
-    background: linear-gradient(to right, #F8A120, transparent);
-    right: -10%;
-}
-  
   #home h1 {
     color: var(--color-text);
     line-height: 1;
-    font-size: 4rem;
+    font-size: 3rem;
 
     margin-top: 2rem;
     margin-bottom: 1rem;
 
     font-family: 'Paralucent-Medium', sans-serif;
 
-    background: linear-gradient(145deg, #fff7e4 65%, #fff1d9);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  
-  #home h1 span {
-    font-family: 'Paralucent-Medium', sans-serif;
-    background: var(--gradient);
+    background: linear-gradient(125deg, #faf4e6 25%, #f3c877);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
   #home p {
-    font-size: 1.4rem;
-    font-weight: 300;
-    color: #f0f0f0;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #faf4e6;
+    width: 90%;
   }
 
   #home p span {
@@ -415,19 +371,21 @@
       }
     
       header#home .content h1 {
-        font-size: 8rem;
+        font-size: 6rem;
         line-height: .9;
-        background: linear-gradient(180deg, #fffcf6 60%, #ffe1a0);
+        background: linear-gradient(125deg, #faf4e6 25%, #f3c877);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        margin-bottom: 1rem;
+
+        padding-bottom: 1rem;
       }
 
       header#home .content p {
         font-size: 1.8rem;
-        margin-top: 2rem;
+        margin-top: 1rem;
         font-weight: 200;
-        color: #ffffffdc;
+        color: #faf4e6;
+        width: 80%;
       }
 
       header#home .content p span {
@@ -471,7 +429,7 @@
 
   header#home .content h1 {
     font-size: 9rem;
-    width: 100%;
+    width: 80%;
   }
 
   header#home .content p {

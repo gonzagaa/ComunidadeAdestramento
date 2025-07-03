@@ -36,7 +36,6 @@
     object-fit: cover;
     z-index: 0;
 
-    mask-image: linear-gradient(to bottom, #000 80%, transparent);
 }
 
 #sobre .content {
@@ -52,7 +51,7 @@
     }
 
     section#sobre .content .image img {
-        width: 75%;
+        width: 80%;
         mask-image: linear-gradient(to bottom, #000 70%, transparent);
     }
 
@@ -61,6 +60,5 @@
     }
 
     section#sobre img.bg {
-        filter: brightness(.5);
     }
 }
