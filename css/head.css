@@ -3,7 +3,7 @@ header h2 {
     line-height: 1;
     font-family: "Paralucent-Medium", sans-serif;
 
-    background: linear-gradient(145deg, #fff7e4 65%, #fff1d9);
+    background: linear-gradient(145deg, #fcf6ea 45%, #f7d08c);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }

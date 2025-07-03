@@ -33,6 +33,8 @@
 #faq header img {
     width: 120%;
     margin-top: -10%;
+
+    mask-image: linear-gradient(to top, #000 80%, transparent);
 }
 
 #faq .faq {
