@@ -51,6 +51,8 @@
 @media (min-width: 1080px) {
     section#carrossel {
         height: 45vh;
+
+        margin-top: -10%;
     }
 
     section#carrossel .slide:before,

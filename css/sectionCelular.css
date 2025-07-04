@@ -1,0 +1,136 @@
+#celular {
+    overflow: hidden;
+    position: relative;
+    margin-top: -4rem;
+
+    padding-bottom: 3rem;
+}
+
+#celular img.bg {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+
+    mask-image: linear-gradient(to bottom, #000 70%, transparent);
+}
+
+#celular .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+    z-index: 2;
+}
+
+#celular .content header {
+    margin-top: 0rem;
+}
+
+#celular .content header p {
+    font-size: 1.4rem;
+    color: #c5c0b4;
+    margin-top: .5rem;
+}
+
+#celular .content a {
+    width: 100%;
+}
+
+#celular .content a button {
+    margin-top: 2rem;
+    width: 100%;
+}
+
+#celular .image img {
+    width: 100%;
+}
+
+#celular .content header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#celular .content header h2 {
+    width: 80%;
+}
+
+#celular .content header h2.desktop {
+    display: none;
+}
+
+section#celular::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, #060606, #00000000 40%);
+        z-index: 1;
+    } 
+
+@media (min-width: 1080px) {
+    section#celular {
+        padding-bottom: 8rem;
+        margin-top: 0;
+
+        padding-block: 4%;
+    }
+
+    section#celular .content {
+        display: grid;
+        grid-template-columns: 1fr 1.2fr;
+        grid-template-areas: "a b";
+        gap: 8rem;
+    }
+
+    section#celular .content header {
+        grid-area: a;
+        align-items: start;
+        text-align: left;
+
+        margin-top: 0;
+    }
+
+    section#celular .content header h2 {
+        margin-bottom: 2rem;
+        width: 80%;
+    }
+
+    section#celular .content header h2.desktop {
+        display: initial;
+    }
+
+    section#celular .content header h2.mobile {
+        display: none;
+    }
+
+    section#celular .content header p {
+        font-size: 1.6rem;
+        margin-top: 1rem;
+    }
+
+    section#celular .content .image img {
+        width: 100%;
+    }
+
+    /* section#celular .content .imFh2age img {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+
+        width: 80%;
+        left: 45%;
+    } */
+
+    section#celular .content a {
+        width: initial;
+    }
+}
