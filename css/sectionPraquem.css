@@ -215,21 +215,22 @@
   transform: translate(-50%, 0);
 }
 
+section#praquem::before {
+        content: '';
+        position: absolute; 
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, #000000, transparent 25%);
+        z-index: 1;
+    } 
+
 @media (min-width: 1080px) {
   section#praquem .content {
  
   }
 
-  section#praquem::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(to bottom, #060606, #00000000 25%);
-        z-index: 1;
-    } 
 
   .custom-shape-divider-bottom-1739122415 svg,
   .custom-shape-divider-top-1738825301 svg {

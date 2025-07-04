@@ -24,7 +24,6 @@
 
     padding-top: 4rem;
     padding-bottom: 4rem;
-
 }
 
 #videoDois img.bg {
@@ -61,10 +60,26 @@
 
 #videoDois .video {
     width: 100%;
-    border: 2px solid var(--primary-color);
     border-radius: 2rem;
     position: relative;
     aspect-ratio: 16/9;
+
+    padding: .3rem;
+    background: radial-gradient(#F8AA31, #000, #000);
+    background-size: 300% 300%;
+    animation: girar-borda 9s linear infinite;
+}
+
+@keyframes girar-borda {
+  0% {
+    background-position: 50% 50%;
+  }
+  50% {
+    background-position: 50% 200%;
+  }
+  100% {
+    background-position: 50% 50%;
+  }
 }
 
 #videoDois .video button {

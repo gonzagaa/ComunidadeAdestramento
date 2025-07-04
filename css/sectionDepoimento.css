@@ -65,14 +65,20 @@
 
 #depoimento .video {
     width: 75%;
-    aspect-ratio: 9/18;
-    border: 2px solid var(--primary-color);
+    aspect-ratio: 9/16;
     border-radius: 2rem;
     position: relative;
+
+    padding: .3rem;
+    background: radial-gradient(#F8AA31, #000, #000);
+    background-size: 300% 300%;
+    animation: girar-borda 9s linear infinite;
 }
 
-#depoimento .video button {
-    font-size: 1.3rem;
+#depoimento button {
+    font-size: 1.8rem;
+
+    margin-top: 2rem;
 }
 
 #depoimento .video img.play {
@@ -83,16 +89,9 @@
     transform: translate(-50%, -50%);
 }
 
-#depoimento .video a button.mobile {
-    position: absolute;
-    bottom: 2%;
-    left: 50%;
-    transform: translate(-50%, 0);
-    width: 95%;
-}
-
-#depoimento a button.desktop {
-    display: none;
+#depoimento iframe {
+     border-radius: 1.7rem !important;
+     height: 100%;
 }
 
 #depoimento iframe.mobilee {
@@ -113,7 +112,7 @@ section#depoimento::before {
         left: 0;
         width: 100%;
         height: 100%;
-        background: linear-gradient(to bottom, #060606, #00000000 10%);
+        background: linear-gradient(to bottom, #000000, #00000000 10%);
         z-index: 1;
     } 
 
@@ -124,12 +123,12 @@ section#depoimento::before {
 
      section#depoimento::before {
         content: '';
-        position: absolute;
+        position: absolute; 
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        background: linear-gradient(to bottom, #060606, #00000000 25%);
+        background: linear-gradient(to bottom, #000000, transparent 25%);
         z-index: 1;
     } 
 
@@ -168,12 +167,8 @@ section#depoimento::before {
     section#depoimento .video {
         aspect-ratio: 16/9;
     }
-
-    section#depoimento .video a button.mobile {
-        display: none;
-    }
     
-    section#depoimento a button.desktop {
+    section#depoimento a button {
         margin-top: 5rem;
         display: inherit;
     }

@@ -1,13 +1,13 @@
 #navigation-button {
     position: fixed;
     z-index: 20;
-    top: 1rem;
-    width: 94%;
+    top: 0;
+    width: 100%;
     left: 50%;
     transform: translateX(-50%);
     
-    padding-block: 1.8rem;
-    border-radius: 2rem;
+    padding-block: 3rem;
+    border-radius: 0 0 4rem 4rem;
     
     background: linear-gradient(
     130deg,
@@ -20,6 +20,7 @@
     -webkit-backdrop-filter: blur(20px) saturate(180%);
     
     border: 1px solid rgba(248, 162, 32, 0.2);
+    border-top: none;
 box-shadow: 0 0 40px rgba(248, 162, 32, 0.1);
 
 
@@ -36,7 +37,7 @@ box-shadow: 0 0 40px rgba(248, 162, 32, 0.1);
 }
 
 #navigation-button .content img {
-    width: 5rem;
+    width: 15rem;
 }
 
 #navigation-button h3 {

@@ -189,23 +189,23 @@
     fill: #000;
 }
 
+section#plano::before {
+        content: '';
+        position: absolute; 
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, #000000, transparent 25%);
+        z-index: 1;
+    } 
+
 @media (min-width: 1080px) {
     section#plano {
         height: 100vh;
 
         background: var(--bg-black);
     }
-
-    section#plano::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(to bottom, #060606, #00000000 25%);
-        z-index: 1;
-    } 
 
     section#plano .video img.bg.desktop {
         display: inherit;
