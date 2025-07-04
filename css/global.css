@@ -19,9 +19,8 @@
     --color-text: #fff4dd;
     --primary-color: #F8AA31;
     --secondy-color: #FCCA6A;
-    --orange-black: #170E00;
     --gradient: linear-gradient(45deg, #F8AA31 0%, #FCCA6A 100%);
-    --bg-black: #050505;
+    --bg-black: #000000;
 
     --nav-height: 7.2rem;
 }  

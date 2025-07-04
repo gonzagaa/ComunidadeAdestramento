@@ -1,0 +1,98 @@
+#metodo {
+    overflow: hidden;
+    position: relative;
+    margin-top: -4rem;
+
+    padding-bottom: 3rem;
+}
+
+#metodo img.bg {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+
+    mask-image: linear-gradient(to bottom, #000 70%, transparent);
+}
+
+#metodo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #000000, #00000000 15%);
+    z-index: 1;
+} 
+
+#metodo .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+    z-index: 2;
+}
+
+#metodo .content header {
+    margin-top: 2rem;
+}
+
+#metodo .content header p {
+    font-size: 1.5rem;
+    color: #c5c0b4;
+    margin-top: .5rem;
+}
+
+#metodo .content a button {
+    margin-top: 2rem;
+}
+
+#metodo .image img {
+    width: 100%;
+}
+
+@media (min-width: 1080px) {
+    section#metodo {
+        padding-bottom: 8rem;
+        margin-top: 0;
+
+        padding-block: 15%;
+    }
+
+    section#metodo .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "a b";
+    }
+
+    section#metodo .content header {
+        grid-area: a;
+        align-items: start;
+        text-align: left;
+
+        margin-top: 0;
+    }
+
+    section#metodo .content header h2 {
+        margin-bottom: 2rem;
+    }
+
+    section#metodo .content header p {
+        font-size: 1.6rem;
+        margin-top: 1rem;
+    }
+
+    section#metodo .content .image img {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+
+        width: 80%;
+        left: 45%;
+    }
+}
