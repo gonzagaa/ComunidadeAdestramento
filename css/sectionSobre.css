@@ -30,6 +30,10 @@
 
 }
 
+#sobre header h2 {
+    margin-bottom: 2rem;
+}
+
 #sobre header p {
     font-size: 1.5rem;
     line-height: 1.6;
@@ -74,11 +78,16 @@ section#sobre::before {
     section#sobre .content .image img {
         margin-top: 0;
         width: 80%;
-        mask-image: linear-gradient(to bottom, #000 70%, transparent);
+
+        mask-image: none;
     }
 
     section#sobre header p {
         font-size: 1.8rem;
+    }
+
+    section#sobre .content header {
+        text-align: left;
     }
 
     section#sobre img.bg {

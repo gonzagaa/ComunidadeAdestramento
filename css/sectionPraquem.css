@@ -22,7 +22,6 @@
 }
 
 #praquem header {
-  margin-bottom: 60%;
   position: relative;
   z-index: 1;
 }
@@ -43,13 +42,14 @@
   mask-image: linear-gradient(to bottom, #000, transparent);
 
   filter: brightness(.6);
+
+  display: none;
 }
 
 #praquem .image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-
 }
 
 #praquem .image.um {
@@ -67,7 +67,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 22rem;
+  gap: 5rem;
 
   position: relative;
 }
@@ -320,6 +320,8 @@ section#praquem::before {
     z-index: 0;
 
     filter: brightness(.3);
+
+    display: inherit;
   }
   
   section#praquem .image img {

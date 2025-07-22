@@ -157,7 +157,7 @@ summary::-webkit-details-marker {
         align-items: center;
     }
 
-    section#faq .wrapper .image img {
-        mask-image: linear-gradient(to right ,#fff, transparent 95%);
+    section#faq header img {
+        mask-image: none;
     }
 }

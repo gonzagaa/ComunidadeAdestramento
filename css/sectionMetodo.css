@@ -42,6 +42,11 @@
     margin-top: 2rem;
 }
 
+#metodo .content header img.logo {
+    width: 30rem;
+    margin-bottom: 2rem;
+}
+
 #metodo .content header p {
     font-size: 1.5rem;
     color: #c5c0b4;

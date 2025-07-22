@@ -10,9 +10,10 @@ a {
     transition: all 0.3s ease-in-out;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
     padding-block: 1.5rem;
-    padding-inline: 2rem;
+    padding-inline: 3rem;
     background: var(--gradient);
-    border-radius: 30px;
+    border-radius: 50px;
+    text-transform: uppercase;
     display: flex;
     align-items: center;
     justify-content: center;

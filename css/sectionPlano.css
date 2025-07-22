@@ -202,7 +202,7 @@ section#plano::before {
 
 @media (min-width: 1080px) {
     section#plano {
-        height: 100vh;
+        height: 120vh;
 
         background: var(--bg-black);
     }
@@ -232,27 +232,28 @@ section#plano::before {
     
     section#plano .video img.bg.mobile {
         border-radius: 3rem;
-        width: 41%;
+        width: 25%;
         right: 0;
-        top: 50%;
-        left: 40%;
-        transform: translate(0, -50%);
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         mask-image: linear-gradient(to left, #000 60%, transparent);
     }
 
     section#plano .text {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: start;
         text-align: left;
+        gap: 4rem;
 
         position: absolute;
         margin-top: 0;
-        top: 50%;
-        transform: translate(0, -50%);
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
 
-        left: 18%;
-        padding: 4rem;
+        padding: 8rem;
         backdrop-filter: blur(16px) saturate(180%);
         -webkit-backdrop-filter: blur(16px) saturate(180%);
         background: linear-gradient(130deg, #4f300022, #00000046, #0000002e, #2416005d);
@@ -263,10 +264,11 @@ section#plano::before {
 
     section#plano h2.title {
         font-size: 1.8rem;
+        margin-top: 0;
     }
 
     section#plano .price h6 {
-        top: -2%;
+        top: -4%;
     }
 
     section#plano h2.plano {
@@ -319,11 +321,10 @@ section#plano::before {
 
 @media (min-width: 1700px) {
     section#plano .text {
-        left: 23%;
+      
     }
 
     section#plano .video img.bg.mobile {
-        width: 35%;
-        left: 44%;
+    
     }
 }
