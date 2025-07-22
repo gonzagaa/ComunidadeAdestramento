@@ -155,12 +155,12 @@
     position: absolute;
     top: 2%;
     left: 50%;
-    width: 80%;
+    width: 100%;
   }
 }
 
-@media (min-width: 650px) and (min-height: 400px) {
-    #home::after {
+@media (min-width: 1080px) {
+  #home::after {
       display: none;
     }
 
@@ -204,9 +204,6 @@
       position: relative;
       z-index: 2;
     }
-}
-
-@media (min-width: 1080px) {
   header#home {
     justify-content: center;
     position: relative;

@@ -200,6 +200,12 @@ section#plano::before {
         z-index: 1;
     } 
 
+@media (min-width: 650px) {
+    section#plano .video img.bg {
+        width: 50%;
+    }
+}
+
 @media (min-width: 1080px) {
     section#plano {
         height: 120vh;
