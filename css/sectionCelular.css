@@ -106,6 +106,7 @@ section#celular::before {
 
     section#celular .content header h2.desktop {
         display: initial;
+        width: 70%;
     }
 
     section#celular .content header h2.mobile {
@@ -132,5 +133,11 @@ section#celular::before {
 
     section#celular .content a {
         width: initial;
+    }
+}
+
+@media (min-width: 1700px) {
+    section#celular .content header h2.desktop {
+        width: 60%;
     }
 }

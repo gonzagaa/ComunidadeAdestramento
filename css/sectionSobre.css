@@ -68,6 +68,14 @@ section#sobre::before {
         z-index: 1;
     } 
 
+#sobre img.fundo {
+    display: none;
+}
+
+#sobre img.desktop {
+    display: none;
+}
+
 @media (min-width: 1080px) {
     section#sobre .content {
         display: grid;
@@ -91,5 +99,48 @@ section#sobre::before {
     }
 
     section#sobre img.bg {
+    }
+
+     section#sobre img.fundo {
+        display: inherit;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        height: 100%;
+        object-fit: cover;
+
+        mask-image: linear-gradient(to top, #000 80%, transparent);
+    }
+
+    section#sobre::before {
+        content: '';
+        position: absolute; 
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to top, #000000, transparent 15%);
+        z-index: 1;
+    } 
+
+    section#sobre::after {
+        content: '';
+        position: absolute; 
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, #000000, transparent 15%);
+        z-index: 1;
+    } 
+
+    section#sobre .image img.desktop {
+        display: inherit;
+        width: 70%;
+    }
+
+    section#sobre img.mobile {
+        display: none;
     }
 }

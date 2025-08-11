@@ -156,6 +156,7 @@
 @media (min-width: 1080px) {
     section#videoDois {
         padding-bottom: 3rem;
+        height: 60vh;
     }
 
     section#videoDois iframe.mobile,
@@ -187,8 +188,18 @@
         padding-inline: 25%;
     }
 
-    section#videoDois .video {
+     section#videoDois .video {
         aspect-ratio: 16/9;
+
+        position: absolute;
+        top: -30%;
+        left: 0;
+        right: 0;
+        width: 100%;
+    }
+
+    section#videoDois .video::before {
+        display: none;
     }
 
     section#videoDois .video a button.mobile {

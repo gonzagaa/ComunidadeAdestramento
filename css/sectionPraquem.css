@@ -2,6 +2,8 @@
   overflow: hidden;
   position: relative;
   background: var(--bg-black);
+
+  padding-bottom: 1rem;
 }
 
 #praquem img.bg {
@@ -163,6 +165,8 @@
   top: initial;
   bottom: -15rem;
   left: -25rem;
+
+  display: none;
 }
 
 .custom-shape-divider-top-1738825301 {
@@ -227,6 +231,9 @@ section#praquem::before {
     } 
 
 @media (min-width: 1080px) {
+  section#praquem {
+    padding-bottom: 8rem;
+  }
   section#praquem .content {
  
   }

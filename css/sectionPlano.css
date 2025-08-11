@@ -20,13 +20,13 @@
 
 #plano .video img.bg {
     position: absolute;
-    top: 0;
+    top: -8%;
     left: 50%;
     transform: translate(-50%, 0);
-    width: 120%;
+    width: 140%;
     object-fit: cover;
 
-    mask-image: linear-gradient(to top, #000 90%, transparent);
+    mask-image: linear-gradient(to bottom, #000 90%, transparent);
 }
 
 #plano .video img.bg.desktop {
@@ -243,7 +243,7 @@ section#plano::before {
         top: 30%;
         left: 50%;
         transform: translate(-50%, -50%);
-        mask-image: linear-gradient(to left, #000 60%, transparent);
+        mask-image: linear-gradient(to bottom, #000 60%, transparent);
     }
 
     section#plano .text {
