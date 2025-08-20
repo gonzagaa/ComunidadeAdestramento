@@ -200,6 +200,14 @@ section#plano::before {
         z-index: 1;
     } 
 
+    #plano img.fundo.desktop {
+        display: none;
+    }
+
+    #plano img.bg.desktop {
+        display: none;
+    }
+
 @media (min-width: 650px) {
     section#plano .video img.bg {
         width: 50%;
@@ -211,6 +219,23 @@ section#plano::before {
         height: 120vh;
 
         background: var(--bg-black);
+    }
+
+    section#plano img.fundo.mobile {
+        display: none;
+    }
+
+    section#plano img.fundo.desktop {
+        display: inherit;
+        opacity: .8;
+    }
+
+    section#plano .video img.bg.mobile {
+        display: none;
+    }
+
+    section#plano .video img.bg.desktop {
+        display: inherit;
     }
 
     section#plano .video img.bg.desktop {
@@ -236,7 +261,7 @@ section#plano::before {
         text-align: center;
     }
     
-    section#plano .video img.bg.mobile {
+    section#plano .video img.bg.desktop {
         border-radius: 3rem;
         width: 25%;
         right: 0;

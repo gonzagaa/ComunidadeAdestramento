@@ -24,6 +24,8 @@
 
     padding-top: 4rem;
     padding-bottom: 4rem;
+
+    height: 30vh;
 }
 
 #videoDois img.bg {
@@ -67,6 +69,11 @@
     padding: .2rem;
     overflow: hidden;
 
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    mask-image: linear-gradient(to bottom, #000 80%, transparent);
 }
 
 #videoDois .video::before {
@@ -81,6 +88,8 @@
     z-index: 0;
     top: 50%;
     transform-origin: top center;
+
+    display: none;
 }
 
 @keyframes rotate {
@@ -156,7 +165,7 @@
 @media (min-width: 1080px) {
     section#videoDois {
         padding-bottom: 3rem;
-        height: 60vh;
+        height: 70vh;
     }
 
     section#videoDois iframe.mobile,
