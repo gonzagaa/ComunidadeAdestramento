@@ -216,7 +216,7 @@ section#plano::before {
 
 @media (min-width: 1080px) {
     section#plano {
-        height: 120vh;
+        height: 140vh;
 
         background: var(--bg-black);
     }
@@ -246,7 +246,7 @@ section#plano::before {
         width: 100%;
         transform: initial;
 
-        mask-image: linear-gradient(to bottom, #000 40%, #00000006);
+        mask-image: linear-gradient(to bottom, #000 10%, #00000006);
     }
 
     section#plano .price {

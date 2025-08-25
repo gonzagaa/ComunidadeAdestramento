@@ -73,7 +73,7 @@
     left: 0;
     top: 0;
 
-    mask-image: linear-gradient(to bottom, #000 80%, transparent);
+    mask-image: linear-gradient(to top, #000 50%, transparent);
 }
 
 #videoDois .video::before {

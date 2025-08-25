@@ -69,7 +69,7 @@
     padding: .2rem;
 }
 
-#video .video::before {
+/* #video .video::before {
     content: '';
     display: block;
     background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #F8AA31 50%, rgba(255, 255, 255, 0) 100%);
@@ -81,7 +81,7 @@
     z-index: 0;
     top: 50%;
     transform-origin: top center;
-}
+} */
 
 #video button {
     font-size: 1.8rem;
