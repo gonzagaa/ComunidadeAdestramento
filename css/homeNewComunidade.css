@@ -2,7 +2,8 @@
     background: var(--bg-black);
     overflow: hidden;
 
-    padding-block: 32%;
+    padding-top: 32%;
+    padding-bottom: 32%;
   
     position: relative;
   
@@ -163,6 +164,11 @@
 @media (min-width: 1080px) {
   #home::after {
       display: none;
+    }
+
+    header#home {
+      padding-top: 0;
+      padding-bottom: 0;
     }
 
     header#home .image img.testebg {
