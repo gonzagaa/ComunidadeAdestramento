@@ -1,7 +1,8 @@
 #home {
     background: var(--bg-black);
-    height: 80vh;
     overflow: hidden;
+
+    padding-block: 32%;
   
     position: relative;
   
