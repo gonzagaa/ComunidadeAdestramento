@@ -295,7 +295,7 @@ section#plano::before {
         border-radius: 3rem;
         width: 25%;
         right: 0;
-        top: 30%;
+        top: 38%;
         left: 50%;
         transform: translate(-50%, -50%);
         mask-image: linear-gradient(to bottom, #000 60%, transparent);
@@ -330,6 +330,7 @@ section#plano::before {
 
     section#plano .price h6 {
         top: -4%;
+        font-size: 1.6rem;
     }
 
     section#plano h2.plano {
