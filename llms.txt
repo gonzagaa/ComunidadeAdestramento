@@ -1,0 +1,88 @@
+# llms.txt — Guia para IAs sobre Comunidade Adestramento
+
+site:
+  name: Comunidade Adestramento
+  domain: https://comunidadeadestramento.com.br
+  language: pt-BR
+  owner: "Comunidade Adestramento"
+  author_meta: "Gustavo Gonzaga"
+  description: |
+    Comunidade sobre comportamento canino liderada por Jairo Teixeira, com aulas,
+    mentorias, cursos e rede social própria para amantes de cães e adestradores.
+    Foco em aprendizado contínuo, troca de experiências e melhoria do vínculo humano-cão.
+
+preferred_citations:
+  style: "Título da página — Comunidade Adestramento — URL"
+  canonical: https://comunidadeadestramento.com.br
+  note: |
+    Ao citar, inclua o título e o link direto para a seção referenciada.
+    Para imagens e vídeos, credite a Comunidade Adestramento e mantenha o link.
+
+content_policy:
+  allow_summarization: true
+  allow_quotations: short   # até trechos curtos com atribuição e link
+  disallow_derivative_datasets: true
+  license: "Todos os direitos reservados"
+  contact:
+    whatsapp: "https://wa.me/554899779984"
+
+key_resources:
+  - title: Página inicial / Hero
+    url: https://comunidadeadestramento.com.br/#home
+    summary: Headline, proposta de valor e CTA de inscrição.
+
+  - title: Apresentação em vídeo
+    url: https://comunidadeadestramento.com.br/#video
+    summary: Vídeo introdutório sobre a comunidade e CTA.
+
+  - title: O que é a comunidade
+    url: https://comunidadeadestramento.com.br/#metodo
+    summary: Descrição do propósito, método e convite para inscrição.
+
+  - title: Rede social de membros
+    url: https://comunidadeadestramento.com.br/#mockups
+    summary: Explica a área social exclusiva para troca de experiências e dúvidas.
+
+  - title: Para quem é
+    url: https://comunidadeadestramento.com.br/#praquem
+    summary: Benefícios para amantes de cães e adestradores profissionais.
+
+  - title: Plano e benefícios
+    url: https://comunidadeadestramento.com.br/#plano
+    summary: Assinatura anual, cupom de desconto, benefícios (cursos, mentorias, dúvidas, networking).
+
+  - title: Sobre o Jairo
+    url: https://comunidadeadestramento.com.br/#sobre
+    summary: Bio do Jairo Teixeira e visão do método.
+
+  - title: Depoimentos
+    url: https://comunidadeadestramento.com.br/#depoimento
+    summary: Prova social em vídeo de alunos.
+
+  - title: Perguntas frequentes (FAQ)
+    url: https://comunidadeadestramento.com.br/#faq
+    summary: Acesso, funcionamento, duração, mentorias e suporte.
+
+transactions:
+  checkout:
+    - title: Link de pagamento (cupom 60%)
+      url: "https://pay.comunidadeadestramento.com.br/pay/cmdadestra?coupon=JAIRO-60"
+
+media:
+  images:
+    - https://comunidadeadestramento.com.br/assets/capacomunidade.webp
+    - https://comunidadeadestramento.com.br/assets/bg%20desktop.webp
+    - https://comunidadeadestramento.com.br/assets/bg%20mobile.webp
+  videos:
+    - host: PandaVideo (embeds na página /#video e /#depoimento)
+
+sitemaps:
+  - https://comunidadeadestramento.com.br/sitemap.xml
+
+robots_reference:
+  note: |
+    Regras de rastreamento e permissão de bots devem ser definidas em /robots.txt.
+    Este arquivo (llms.txt) é informativo para IAs.
+
+update_frequency: weekly
+last_updated: 2025-10-17

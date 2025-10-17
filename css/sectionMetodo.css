@@ -53,8 +53,30 @@
     margin-top: .5rem;
 }
 
+#metodo .content header p span {
+    font-weight: 700;
+}
+
+#metodo .content header ul li {
+    font-size: 1.8rem;
+    margin-top: .5rem;
+    margin-bottom: 0;
+    padding-bottom: 0 !important;
+    color: #fff;
+}
+
+#metodo .content header ul {
+    margin-bottom: 0;
+    list-style: disc;
+    text-align: left;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 #metodo .content a button {
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
 
 #metodo .image img {
@@ -88,8 +110,18 @@
     }
 
     section#metodo .content header p {
-        font-size: 1.6rem;
+        font-size: 4rem;
+        color: #fff;
         margin-top: 1rem;
+    }
+
+    section#metodo .content header ul {
+        align-items: start;
+    }
+
+    section#metodo .content header ul li {
+        font-size: 2rem;
+        color: #fff;
     }
 
     section#metodo .content .image img {

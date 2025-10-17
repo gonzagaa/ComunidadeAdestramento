@@ -23,7 +23,7 @@
     top: -8%;
     left: 50%;
     transform: translate(-50%, 0);
-    width: 140%;
+    width: 110%;
     object-fit: cover;
 
     mask-image: linear-gradient(to bottom, #000 95%, transparent);
@@ -36,7 +36,7 @@
 #plano .text {
     position: relative;
     z-index: 1;
-    margin-top: 34rem;
+    margin-top: 23rem;
 }
 
 #plano h2.title {
@@ -131,6 +131,23 @@
     box-shadow: 0 0 30px #f8a22026;
 }
 
+#plano .price strong {
+    position: absolute;
+    color: #fff;
+    top: 45%;
+    left: 13%;
+    font-size: 1.6rem;
+    color: #764b09;
+    background: #fff;
+    padding: .3rem;
+    border-radius: .3rem;
+}
+
+#plano .price h2 {
+    color: #fff;
+    margin-bottom: .5rem;
+}
+
 #plano .price h6 {
     padding: 1rem .5rem;
     background: var(--gradient);
@@ -152,6 +169,10 @@
     font-weight: 400;
 }
 
+ul li:last-child {
+    padding-bottom: 50px !important;
+}
+
 #plano .price p span {
     background: var(--gradient);
     -webkit-background-clip: text;
@@ -159,12 +180,17 @@
     font-weight: 600;
 }
 
+#plano .price p small {
+    font-size: 1.4rem;
+    text-decoration: line-through;
+}
+
 #plano .price h3 {
     color: #fff;
-    font-size: 11rem;
+    font-size: 7rem;
     line-height: 1;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 
     background: var(--gradient);
     -webkit-background-clip: text;
@@ -260,6 +286,10 @@ section#plano::before {
 
         text-align: center;
     }
+
+    section#plano .price strong {
+        top: 35%;
+    }
     
     section#plano .video img.bg.desktop {
         border-radius: 3rem;
@@ -330,6 +360,10 @@ section#plano::before {
     }
 
     section#plano .price p {
+        font-size: 2rem;
+    }
+
+    section#plano .price p small {
         font-size: 2rem;
     }
     

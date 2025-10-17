@@ -1,0 +1,183 @@
+#obrigado {
+    height: auto;
+    padding-block: 5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+#obrigado img.bg {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+
+    mask-image: linear-gradient(to bottom, #000 70%, transparent);
+}
+
+#obrigado .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+#obrigado header h2 {
+    font-size: 4rem;
+    font-family: "Paralucent-Medium", sans-serif;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#obrigado p:nth-child(1) {
+}
+
+#obrigado p {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+#obrigado p span {
+    font-weight: 700;
+}
+
+#obrigado h3 {
+    margin-top: 3rem;
+    font-size: 2rem;
+    color: #fff;
+}
+
+#obrigado .topics {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+    gap: 1rem;
+
+    margin-top: 2rem;
+}
+
+#obrigado .topic {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    /* From https://css.glass */
+background: rgba(56, 56, 56, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(0, 0, 0, 0.3);
+padding: 1rem;
+width: 100%;
+}
+
+#obrigado .topic h4 {
+    font-size: 6rem;
+    font-family: "Paralucent-Medium", sans-serif;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1;
+}
+
+#obrigado .topic p {
+    font-size: 1.7rem;
+    margin-top: -1rem;
+}
+
+#obrigado .topic:nth-child(1) h4 {
+    margin-left: .7rem;
+}
+
+#obrigado .topic:nth-child(1) p {
+    margin-left: .9rem;
+}
+
+#obrigado .buttons {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    width: 100%;
+}
+
+#obrigado .buttons a button {
+    font-size: 1.4rem;
+    border-radius: 1.6rem;
+    width: 100%;
+}
+
+#obrigado .obs {
+    margin-top: 2rem;
+}
+
+#obrigado .obs p {
+    font-size: 1.5rem;
+}
+
+#obrigado .ajuda {
+    position: relative;
+    display: flex;
+    gap: 1rem;
+
+    margin-top: 4rem;
+}
+
+#obrigado .ajuda::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    right: 0;
+    top: -2rem;
+    background: #ffffff3f;
+}
+
+#obrigado .ajuda h3 {
+    font-size: 1.4rem;
+    margin-top: 0;
+    text-align: left;
+}
+
+#obrigado .ajuda a button {
+    font-size: 1.4rem;
+    padding: 1rem 2rem;
+    background: #fff;
+}
+
+#obrigado .ajuda a button::Before {
+    display: none;
+}
+
+@media (min-width: 1080px) {
+    section#obrigado header h2 {
+        font-size: 6rem;
+        margin-bottom: .8rem;
+    }
+
+    section#obrigado header p {
+        font-size: 2rem;
+    }
+
+    section#obrigado .obs {
+        margin-top: 3rem;
+    }
+
+    section#obrigado .ajuda {
+        margin-top: 5rem;
+        align-items: center;
+    }
+
+    section#obrigado .ajuda h3 {
+        font-size: 1.6rem;
+    }
+}
