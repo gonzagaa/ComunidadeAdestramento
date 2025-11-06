@@ -2,7 +2,7 @@
     background: var(--bg-black);
     overflow: hidden;
 
-    padding-top: 32%;
+    padding-top: 42%;
     padding-bottom: 32%;
   
     position: relative;
@@ -149,7 +149,21 @@
   display: none;
 }
 
+#home img.faixa {
+  position:absolute;
+  width: 500%;
+  left:0; top:0;
+  z-index:10;
+  pointer-events:none;
+  will-change:transform;
+  transform-origin: 3% 50%;
+  animation:faixa-diagonal-home 20s linear infinite alternate;
+}
 
+@keyframes faixa-diagonal-home{
+  from{ transform: rotate(-50deg) translateX(-5%); }
+  to{   transform: rotate(-50deg) translateX(-50%); } /* ajuste -30%…-80% */
+}
 
 @media (min-width: 650px) {
   #home .image img.mobile {
@@ -164,6 +178,10 @@
 @media (min-width: 1080px) {
   #home::after {
       display: none;
+    }
+
+    header#home img.faixa {
+      width: 250%;
     }
 
     header#home {
