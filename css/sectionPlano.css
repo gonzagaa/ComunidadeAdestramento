@@ -8,10 +8,10 @@
 }
 
 #plano img.logo {
-    width: 15rem;
     position: relative;
     z-index: 10;
     margin-bottom: 3rem;
+    width: 15rem;
 }
 
 #plano img.fundo {
@@ -251,18 +251,18 @@ section#plano::before {
 
 #plano img.faixa {
   position:absolute;
-  width:250%;
+  width:300%;
   left:0; top:0;
   z-index:10;
   pointer-events:none;
   will-change:transform;
-  transform-origin: 45% 50%;
+  transform-origin: 40% 50%;
   animation:faixa-diagonal 20s linear infinite alternate;
 }
 
 #plano img.faixa.mobile {
-    width: 350%;
-    transform-origin: 5% 50%;
+    width: 500%;
+    transform-origin: 3% 50%;
 }
 
 @keyframes faixa-diagonal{
@@ -295,8 +295,9 @@ section#plano::before {
     }
 
     section#plano img.faixa.dois {
+        width: 250%;
         display: inherit;
-        transform-origin: 4% 50%;
+        transform-origin: 3% 50%;
     }
 
     section#plano img.logo {
@@ -379,6 +380,7 @@ section#plano::before {
         top: 60%;
         transform: translate(-50%, -50%);
     }
+
 
     section#plano h2.title {
         font-size: 1.6rem;
