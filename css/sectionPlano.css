@@ -258,17 +258,19 @@ section#plano::before {
   will-change:transform;
   transform-origin: 40% 50%;
   animation:faixa-diagonal 20s linear infinite alternate;
+  transform: rotate(-50deg) translateX(-5%);
+}
+
+#plano img.faixa.dois {
+    transform: rotate(-50deg) translateX(-18.5%);
 }
 
 #plano img.faixa.mobile {
     width: 500%;
     transform-origin: 3% 50%;
+    transform: rotate(-50deg) translateX(-18.5%);
 }
 
-@keyframes faixa-diagonal{
-  from{ transform: rotate(-50deg) translateX(0); }
-  to{   transform: rotate(-50deg) translateX(-50%); } /* ajuste -30%…-80% */
-}
 
 #plano img.faixa.dois {
     display: none;
