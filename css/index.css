@@ -1,27 +1,27 @@
-@import './global.css';
+@import './global.css?v=1';
 /* @import './home.css'; */
-@import './button.css';
-@import './head.css';
+@import './button.css?v=1';
+@import './head.css?v=1';
 @import './sectionVideo.css?v=1.0.0';
-@import './sectionPraquem.css';
-@import './sectionPreco.css';
-@import './sectionDepoimento.css';
-@import './sectionFaq.css';
-@import './sectionMetodo.css';
-@import './sectionCarrossel.css';
-@import './slide.css';
-@import './sectionMockups.css';
-@import './sectionVideoDois.css';
-@import './sectionCelular.css';
+@import './sectionPraquem.css?v=1';
+@import './sectionPreco.css?v=1';
+@import './sectionDepoimento.css?v=1';
+@import './sectionFaq.css?v=1';
+@import './sectionMetodo.css?v=1';
+@import './sectionCarrossel.css?v=1';
+@import './slide.css?v=1';
+@import './sectionMockups.css?v=1';
+@import './sectionVideoDois.css?v=1';
+@import './sectionCelular.css?v=1';
 
-@import './lines.css';
-@import './homeNewComunidade.css';
-@import './sectionPlano.css';
-@import './sectionSobre.css';
-@import './footer.css';
-@import './navButton.css';
-@import './author.css';
-@import './iframes.css';
-@import './obrigado.css';
+@import './lines.css?v=1';
+@import './homeNewComunidade.css?v=1';
+@import './sectionPlano.css?v=1';
+@import './sectionSobre.css?v=1';
+@import './footer.css?v=1';
+@import './navButton.css?v=1';
+@import './author.css?v=1';
+@import './iframes.css?v=1';
+@import './obrigado.css?v=1';
 
 

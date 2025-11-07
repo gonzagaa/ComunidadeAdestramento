@@ -66,13 +66,12 @@
 }
 
 #metodo .content header ul {
+    margin-top: 1rem;
     margin-bottom: 0;
     list-style: disc;
     text-align: left;
-    justify-content: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 #metodo .content a button {
