@@ -157,7 +157,7 @@
   pointer-events:none;
   will-change:transform;
   transform-origin: 3% 50%;
-  animation:faixa-diagonal-home 20s linear infinite alternate;
+  animation:faixa-diagonal-home 20s linear infinite alternate-reverse;
 }
 
 @keyframes faixa-diagonal-home{
