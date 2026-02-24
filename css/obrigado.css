@@ -5,12 +5,17 @@
     overflow: hidden;
 }
 
+#obrigado img.logo {
+    width: 15rem;
+    margin-bottom: 2rem;
+}
+
 #obrigado img.bg {
     position: absolute;
     width: 100%;
     top: 0;
     left: 0;
-    height: 100%;
+    height: 100vh;
     object-fit: cover;
     z-index: 0;
 
@@ -18,10 +23,6 @@
 }
 
 #obrigado .content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     position: relative;
     z-index: 1;
 }
@@ -218,9 +219,115 @@ width: 100%;
     display: none;
 }
 
+#obrigado .loja {
+    margin-top: 2rem;
+}
+
+#obrigado .loja img {
+    width: 100%;
+}
+
+.loja {
+  width: 100%;
+  overflow: hidden;
+}
+
+.loja .swiper-wrapper {
+  align-items: stretch;
+}
+
+.loja .item {
+  border-radius: 14px;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: auto;
+
+  padding-bottom: 3rem;
+}
+
+.loja .item img {
+  width: 100%;
+  display: block;
+  aspect-ratio: 1 / 1; /* deixa visual padronizado */
+  object-fit: cover;
+}
+
+.loja .item a {
+  display: block;
+}
+
+.buttonLoja {
+  width: 100%;
+  border: none;
+  padding: 1rem;
+  background: var(--gradient);
+  color: #000;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+
+  border-radius: 0 0 1rem 1rem;
+}
+
+.buttonLoja:hover {
+  transform: translateY(-2px);
+  opacity: 0.95;
+}
+
+/* Setas */
+.loja .swiper-button-prev,
+.loja .swiper-button-next {
+  width: 38px;
+  height: 38px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(4px);
+}
+
+.loja .swiper-button-prev::after,
+.loja .swiper-button-next::after {
+  font-size: 14px;
+  font-weight: 700;
+  color: #111;
+}
+
+/* Posição das setas */
+.loja .swiper-button-prev {
+  left: 6px;
+}
+.loja .swiper-button-next {
+  right: 6px;
+}
+
+/* Bolinhas */
+.loja .swiper-pagination {
+  bottom: 0 !important;
+}
+
+.loja .swiper-pagination-bullet {
+  opacity: 0.5;
+  background: #fff;
+}
+
+.loja .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+/* Se quiser esconder setas no mobile */
+@media (max-width: 767px) {
+  .loja .swiper-button-prev,
+  .loja .swiper-button-next {
+    display: none;
+  }
+}
+
 @media (min-width: 1080px) {
     section#obrigado .content {
-        margin-top: 4%;
+
+        padding-inline: 25%;
     }
 
     section#obrigado header h2 {

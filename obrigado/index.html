@@ -17,7 +17,7 @@
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="../css/index.css?v=42">
+    <link rel="stylesheet" href="../css/index.css?v=42234234">
 
     <link rel="preload" href="../assets/IMG BG COMUNIDADE MOBILE.webp" as="image" type="image/webp">
 
@@ -57,10 +57,11 @@
 <body id="body" class="smooth-scroll-wrapper">
 
     <section id="obrigado">
-      <img class="bg" src="../assets/bg obrigado.avif" alt="">
+      <img class="bg" src="../assets/bg obrigadoo.avif" alt="">
       <div class="wrapper">
         <div class="content">
           <header>
+            <img class="logo" src="../assets/Logo V - principal.avif" alt="">
             <h2>Compra confirmada!</h2>
             <p class="um"><span>Seja bem-vindo(a)</span> à Comunidade Adestramento.</p>
 
@@ -71,10 +72,10 @@
             <p class="quatro">Recomendo que baixe o aplicativo oficial para seu dispositivo mobile ou desktop:</p>
 
             <div class="buttons">
-              <a target="_blank" href="https://circle.so/desktop-app">
+              <a target="_blank" href="https://apps.apple.com/us/app/circle-communities/id1509651625">
                 <button class="button">
                   <img src="../assets/downloads.png" alt="">
-                    Baixar para Desktop
+                    Baixar para Iphone
                 </button>
               </a>
 
@@ -85,19 +86,61 @@
                 </button>
               </a>
 
-              <a target="_blank" href="https://apps.apple.com/us/app/circle-communities/id1509651625">
+              <a target="_blank" href="https://circle.so/desktop-app">
                 <button class="button">
                   <img src="../assets/downloads.png" alt="">
-                    Baixar para Iphone
+                    Baixar para Desktop
                 </button>
-              </a>
+              </a>        
             </div>
 
             <h3>Acesse a comunidade pelo link abaixo:</h3>
             <a href="https://acesso.comunidadeadestramento.com.br/"><button class="acesso"><img src="../assets/ir.png" alt=""> acesso.comunidadeadestramento.com.br</button></a>
+
+            <!-- Swiper CSS -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+      <div class="loja swiper">
+        <div class="swiper-wrapper">
+
+          <div class="item swiper-slide">
+            <img src="../assets/camiseta 1.webp" alt="Camiseta 1">
+            <a target="_blank" href="https://loja.comunidadeadestramento.com.br/comunidadeadestramento/product/camiseta-algodao-peruano-masculino-e-feminino-77756f7b-1884-44b7-8f41-85c6f245ba32">
+              <button class="buttonLoja">Comprar agora</button>
+            </a>
+          </div>
+
+          <div class="item swiper-slide">
+            <img src="../assets/camiseta 2.webp" alt="Camiseta 2">
+            <a target="_blank" href="https://loja.comunidadeadestramento.com.br/comunidadeadestramento/product/camiseta-algodao-peruano-masculino-e-feminino-1d219e14-f3ea-4abc-a33c-48c134c0ab76">
+              <button class="buttonLoja">Comprar agora</button>
+            </a>
+          </div>
+
+          <div class="item swiper-slide">
+            <img src="../assets/camiseta 3.webp" alt="Camiseta 3">
+            <a target="_blank" href="https://loja.comunidadeadestramento.com.br/comunidadeadestramento/product/camiseta-algodao-peruano-masculino-e-feminino">
+              <button class="buttonLoja">Comprar agora</button>
+            </a>
+            </div>
+
+            <div class="item swiper-slide">
+              <img src="../assets/camiseta 4.webp" alt="Camiseta 3">
+              <a target="_blank" href="https://loja.comunidadeadestramento.com.br/comunidadeadestramento/product/camiseta-algodao-peruano-masculino-e-feminino-d861df3d-4c0b-4ebf-a95a-08d57a9730d7">
+                <button class="buttonLoja">Comprar agora</button>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Controles (opcional) -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination"></div>
+        </div>
        
-            <h3>Nossas camisas oficiais da comunidade:</h3>
-            <a href="https://loja.comunidadeadestramento.com.br/"><button class="acesso"><img src="../assets/ir.png" alt=""> loja.comunidadeadestramento.com.br</button></a>
+            <!-- <h3>Nossas camisas oficiais da comunidade:</h3>
+            <a href="https://loja.comunidadeadestramento.com.br/"><button class="acesso"><img src="../assets/ir.png" alt=""> loja.comunidadeadestramento.com.br</button></a> -->
 
             <div class="ajuda">
               <h3>Qualquer dúvida nossa equipe está disponível para te ajudar</h3>
@@ -107,6 +150,34 @@
         </div>
       </div>
     </section>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+  const swiperLoja = new Swiper('.loja.swiper', {
+    slidesPerView: 2,   // mobile
+    spaceBetween: 12,
+    loop: false,
+    grabCursor: true,
+
+    pagination: {
+      el: '.loja .swiper-pagination',
+      clickable: true,
+    },
+
+    navigation: {
+      nextEl: '.loja .swiper-button-next',
+      prevEl: '.loja .swiper-button-prev',
+    },
+
+    breakpoints: {
+      768: {
+        slidesPerView: 3, // desktop também 2
+        spaceBetween: 16,
+      }
+    }
+  });
+</script>
 
     <script>
   const isMobile = window.innerWidth <= 1080; // limite que você usa no CSS
