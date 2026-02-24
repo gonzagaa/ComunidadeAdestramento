@@ -27,7 +27,7 @@
 }
 
 #obrigado header h2 {
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-family: "Paralucent-Medium", sans-serif;
     background: var(--gradient);
     -webkit-background-clip: text;
@@ -38,7 +38,7 @@
 }
 
 #obrigado p {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: 400;
     color: #ffffff;
 }
@@ -47,10 +47,84 @@
     font-weight: 700;
 }
 
+#obrigado p.dois {
+    font-size: 1.4rem;
+    margin-top: 2rem;
+}
+
+#obrigado p.tres {
+    font-size: 1.4rem;
+    margin-top: 2rem;
+    background: #ffffff12;
+    padding: 1rem 3rem;
+    border-radius: .5rem;
+}
+
+#obrigado p.quatro {
+    font-size: 1.4rem;
+    margin-top: 2rem;
+}
+
+#obrigado .buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    width: 100%;
+
+    margin-top: 1rem;
+}
+
+#obrigado .buttons a button img {
+    width: 2rem;
+}
+
+#obrigado .buttons a {
+    width: 100%;
+}
+
+#obrigado .buttons a button.button {
+    font-size: 1.3rem;
+    padding: 1rem;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+    border-radius: .5rem;
+}
+
 #obrigado h3 {
     margin-top: 3rem;
-    font-size: 2rem;
+    font-size: 1.7rem;
     color: #fff;
+}
+
+#obrigado button.acesso {
+    margin-top: 1rem;
+    background: #ffffff12;
+    padding: 1rem;
+    color: #fff;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    width: 100%;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+#obrigado button.acesso:hover {
+    background: #ffffff1f;
+}
+
+#obrigado button.acesso img {
+    width: 3rem;
 }
 
 #obrigado .topics {
@@ -101,20 +175,6 @@ width: 100%;
     margin-left: .9rem;
 }
 
-#obrigado .buttons {
-    margin-top: 1rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    width: 100%;
-}
-
-#obrigado .buttons a button {
-    font-size: 1.4rem;
-    border-radius: 1.6rem;
-    width: 100%;
-}
-
 #obrigado .obs {
     margin-top: 2rem;
 }
@@ -159,9 +219,18 @@ width: 100%;
 }
 
 @media (min-width: 1080px) {
+    section#obrigado .content {
+        margin-top: 4%;
+    }
+
     section#obrigado header h2 {
-        font-size: 6rem;
+        font-size: 7rem;
         margin-bottom: .8rem;
+    }
+
+    section#obrigado header p.um {
+        font-size: 2.5rem;
+        margin-top: -1rem;
     }
 
     section#obrigado header p {
@@ -175,6 +244,7 @@ width: 100%;
     section#obrigado .ajuda {
         margin-top: 5rem;
         align-items: center;
+        justify-content: space-between;
     }
 
     section#obrigado .ajuda h3 {
